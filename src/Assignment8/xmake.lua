@@ -18,6 +18,7 @@ target("CGL")
     set_kind("static")
     add_packages("glew", "glfw", "freetype")
     add_files("CGL/src/*.cpp")
+    add_links("opengl32")
 
 target("main")
     set_kind("binary")
